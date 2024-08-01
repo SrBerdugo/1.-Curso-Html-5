@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como crear Formularios</title>
+</head>
+<body>
+    
+<h1>Formularios</h1>
+
+    <form>
+
+            <fieldset>
+                <legend>
+                    Tu Informacion personal    
+                </legend>
+
+                <label for="nombre">Nombre</label>
+                <input 
+                type="texto" name=" Nombre "id="nombre" placeholder="nombre..">
+                </input>
+
+
+                <div>
+                    <label for="emali">Correo</label>
+                    <input type="email" name="email" placeholder="Tu imail">
+    
+                    </input>
+                </div>
+
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password"></input>
+
+                </div>
+
+
+                <div>   
+                    <!---esta es una etiqueta de radio -->
+                    Sexo
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="Genero" id="hombre"value="Hombre"></input>
+                    <label for="mujer">mujer</label>
+                    <input type="radio" name="Genero" id="mujer"value="mujer"></input>
+                </div>
+
+                <div>
+                    <label>Idioma</label>
+                    <select>
+                        <option>Español</option>
+                        <option>Ingles</option>
+  
+  
+                    </select>
+
+                </div>
+
+                <div>
+                    Fecha de nacimiento
+                    <input type="date"></input>
+
+                </div>
+
+                <!----este sirve para adjuntar archicps se llama FECHEROS-->
+                <div>
+                    Adjunta Doc
+                    <input type="file"></input>
+
+                </div>
+
+                <div>
+                      Telefono  
+                    <input type="tel" name="Telefono"></input>
+
+                </div>
+
+                <div>
+                    Sitio Web  
+                  <input type="url" name="sitio web"></input>
+
+              </div>
+
+              <div>
+               Seleccione su fruta favorita  
+              <input list="frutas" name="fruta"></input>
+              <datalist id="frutas">
+               <option value="manzana"></option>     
+               <option value="mangos"></option>     
+               <option value="peras"></option>     
+               <option value="piña"></option>     
+               <option value="melones"></option>   
+                 
+               
+
+
+              </datalist>
+
+          </div>
+
+
+
+            </fieldset>
+           
+
+        <input type="submit" value="Enviar "/>
+        <input type="reset" value="Limpiar"></input>
+ 
+ 
+        <h2>Validacion de Formularios</h2>        
+            
+
+        <!-- este tipo de validaciones hacen el usuario solo se ajsute al tipo de dato que queremos traer-->
+        <form>
+            <!--ejemplo aque solo restingimo que el usuario dijite no mas de cierta cantidad de letas-->
+            Nombre
+            <input type="text" required 
+              minlength="5" maxlength="20"
+        
+              pattern="[A-Za-z ]+"  
+
+            />
+                 <!-------Aqui restinjo al usuaruario solo escribir letra----->
+
+
+            edad requerida
+            <input type="number"
+            required
+            max="40" min="18"
+            
+            />
+
+            <input type="submit" value="Enviar"/>
+
+
+        </form>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    </form>
+
+</body>
+
+
+
+</html>
